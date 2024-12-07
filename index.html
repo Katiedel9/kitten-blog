@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=""UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kitten Blog</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Kitten Blog</h1>
+        </header>
+        <main>
+            <section id="upload-section">
+                <h2>Uploaded Media</h2>
+                <form id="upload-form">
+                    <input type="file" id="file-input" accept="image/*,video/*,audio/*" required>
+                    <textarea id="description" placeholder="Add a description (optional)" rows="3"></textarea>
+                    <button type="submit">Upload</button>
+                </form>
+            </section>
+            <section id="media-display">
+                <h2>Your Uploaded Media</h2>
+                <div id="media-container">
+                    <!-- Media will be dynamically added here -->
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
